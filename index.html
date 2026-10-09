@@ -12,7 +12,7 @@
     <meta name="theme-color" content="#2a1010" />
     <link rel="icon" href="favicon.ico" sizes="any" />
     <link rel="icon" href="icon.png" type="image/png" />
-    <link rel="apple-touch-icon" href="icon.png" />
+    <link rel="apple-touch-icon" href="apple-icon.png" />
     <link rel="canonical" href="https://www.terravistasafaris.com/" />
 
     <!-- A holding page should not be what search engines index as the site. -->
@@ -237,7 +237,9 @@
         font-weight: 500;
         letter-spacing: 0.18em;
         text-transform: uppercase;
-        color: rgb(255 255 255 / 0.5);
+        /* 0.62, not 0.5 — measured 4.01:1 over the photo at 0.5, which is
+           under the 4.5:1 AA floor for text this size. */
+        color: rgb(255 255 255 / 0.62);
       }
 
       /* ---------- Buttons ---------- */
@@ -390,7 +392,7 @@
 
         <span class="eyebrow fade">Something wild is on its way</span>
 
-        <h1 class="fade">Our New Site Is Coming Soon</h1>
+        <h1 class="fade">Our New Site Is<br />Coming Soon</h1>
 
         <div class="rule fade" aria-hidden="true"></div>
 
